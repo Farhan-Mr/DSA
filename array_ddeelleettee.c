@@ -1,6 +1,5 @@
 /* WAP to delete an element of array */
 
-
 #include<stdio.h>
 
 // Function Decleration for Deletion -
@@ -25,15 +24,16 @@ int main()
         scanf("%d",&del);
 
         // Function calling -
-        delete(arr,n,del);
+        delete(arr, n, del);
+
     return 0;
 }
 
 
 void delete(int arr[], int n, int del)
 {
-    printf("Given Array : ");
-    for(int i=0; i<n; i++)
+    printf("Given array is ->  ");
+    for( int i=0; i<n; i++ )
     {
         printf("%d ",arr[i]);
     }
@@ -43,10 +43,11 @@ void delete(int arr[], int n, int del)
     // Delition Process -
     for(int i=j; i<n; i++)
     {
-        arr[i] = arr[i+1];
+        arr[i] = arr[i+1] ;
     }
 
-    printf("\nAfter deletion of given element \nArray is : ");
+    printf("\nAfter deletion of given element \n");
+    printf("Array is -> ");
     for(int i=0; i<n-1; i++)
     {
         printf("%d ",arr[i]);
